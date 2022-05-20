@@ -88,6 +88,11 @@ header div {
     justify-content: center;
 }
 
+#lock-key label, #lock-key input {
+    padding: 0em 1em;
+}
+
+
 .txt {
     border: 0.2rem solid var(--darker-black);
     outline: none !important;
@@ -110,7 +115,6 @@ footer {
     border-top: 5px solid var(--grayish);
     margin-top: 2em;
 }
-
 
 footer ul {
     display: flex;
