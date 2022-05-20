@@ -11,7 +11,8 @@ function Encrypt(){
 
 function Decrypt() {
     let decrypted = CryptoJS.AES.decrypt(textBox.value, cipherKey.value).toString(CryptoJS.enc.Utf8);
-
+    if (decrypted == "")
+        decrypted = "Incorrect Key !"
     textBox.value = decrypted;
 }
 

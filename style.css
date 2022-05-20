@@ -11,15 +11,16 @@ body {
 }
 
 
-header div {
+#logo {
     background-color: var(--darker-black);
-    color: #d5d5d5;
-    font-size: 35px;
     display: flex;
     justify-content: center;
     border-bottom: 5px solid var(--grayish);
-    padding: 1rem 0;
-    font-weight: 900;
+    padding: 2rem 0;
+}
+
+#logo img {
+    height: 3em;
 }
 
 #content-wrapper {
@@ -35,10 +36,12 @@ header div {
 }
 
 .txt{
-    padding:1rem;
+    padding:1.5rem;
     resize: none;
     font-size: 18px;
+    scrollbar-width: thin;
 }
+
 
 #content-wrapper label {
     padding:1.5rem;

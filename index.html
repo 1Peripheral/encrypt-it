@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Encrypt It</title>
+      <link rel="icon" href="../imgs/lock.png" type="image/icon type">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
       <script src="script.js" defer></script> 
       <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -16,7 +17,7 @@
 
       <header>
          <div>
-            ENCRYPT IT
+           <a id='logo' href="#"><img src="https://see.fontimg.com/api/renderfont4/8Ma60/eyJyIjoiZnMiLCJoIjo2NywidyI6MTAwMCwiZnMiOjY3LCJmZ2MiOiIjN0E3OTc5IiwiYmdjIjoiI0ZGRkRGRCIsInQiOjF9/RU5DUllQVCBJVCA/aquire-bold.png" alt="Logo fonts"></a> 
          </div>
       </header>
 
@@ -25,14 +26,14 @@
 
             <label for="text" class="lbl-icon">Encryption Key  <span class="material-icons-outlined">vpn_key</span> </label>
 
-            <input type="text" id='key-text' class='txt' placeholder="Enter your encryption key ...  ">
+            <input type="text" id='key-text' class='txt' maxlenght="64" placeholder="Enter your encryption key ...  ">
             <span id="lock-key"> 
-               <label for="checkbox">Lock </label> 
+               <label for="checkbox">Lock</label> 
                <input type="checkbox" id="lock-check">
             </span>
 
             <label for="text" class="lbl-icon">Text <span class="material-icons-outlined">article</span></label>
-            <textarea id='input-text' class="txt" placeholder=". . ."> </textarea>     
+            <textarea id='input-text' class="txt" maxlength="300" placeholder=". . ."> </textarea>     
       
             <label>Options: <br></label>
             <div id="btns-wrapper">
