@@ -1,0 +1,135 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins'; 
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+
+
+header div {
+    background-color: var(--darker-black);
+    color: #d5d5d5;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid var(--grayish);
+    padding: 1rem 0;
+    font-weight: 900;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    height: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.txt{
+    padding:1rem;
+    resize: none;
+    font-size: 18px;
+}
+
+#content-wrapper label {
+    padding:1.5rem;
+    font-size: 24px;
+    color: #dbdbdb;
+}
+
+.lbl-icon span, .btn span{
+    vertical-align: middle;
+}
+
+#btns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+@media only screen and (max-width:990px){
+    #content-wrapper {
+        width: 75%;
+    }
+}
+
+
+.btn {
+    background-color: var(--gray);
+    border : none;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem;
+    transition-delay: 0s;
+    transition-duration : 0.3s;
+    transition-timing-function: ease-in-out;
+    font-size: 17px;
+    font-weight: bold;
+    color: #dbdbdb;
+}
+
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+#lock-key {
+    display: flex;
+    justify-content: center;
+}
+
+.txt {
+    border: 0.2rem solid var(--darker-black);
+    outline: none !important;
+    border-radius: 2rem;
+    transition: 0.3s ease-in-out;
+    background-color: #838383;
+}
+
+.txt:focus {
+    border: 0.2rem solid #d6d6d6;
+}
+
+footer {
+    position:sticky;
+    top:100%;
+    width: 100%;
+    background-color: var(--darker-black);
+    color: #dbdbdb;
+    text-align: center;
+    border-top: 5px solid var(--grayish);
+
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    list-style: none;
+    padding:1em 20em;
+}
+
+#gh-link {
+    color: #61885eff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+:root {
+    --darker-black: #1f1f1f;
+    --background-color: #2c2c2c;
+    --blue :#4846ff;
+    --grayish: #a6a6a6;
+    --gray: #818181;
+}

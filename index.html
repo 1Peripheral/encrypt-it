@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Encrypt It</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+      <script src="script.js" defer></script> 
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+
+      <header>
+         <div>
+            ENCRYPT IT
+         </div>
+      </header>
+
+      <main>
+         <div id="content-wrapper">
+
+            <label for="text" class="lbl-icon">Encryption Key  <span class="material-icons-outlined">vpn_key</span> </label>
+
+            <input type="text" id='key-text' class='txt' placeholder="Enter your encryption key ...  ">
+            <span id="lock-key"> 
+               <label for="checkbox">Lock </label> 
+               <input type="checkbox" id="lock-check">
+            </span>
+
+            <label for="text" class="lbl-icon">Text <span class="material-icons-outlined">article</span></label>
+            <textarea id='input-text' class="txt" placeholder=". . ."> </textarea>     
+      
+            <label>Options: <br></label>
+            <div id="btns-wrapper">
+               <button id="enc-button" class="btn" onclick="Encrypt()" >Encrypt <span class="material-icons-outlined">https</span> </button>
+               <button id="dec-button" class="btn" onclick="Decrypt()">Decrypt <span class="material-icons-outlined">lock_open</span></button>
+               <button id="clr-button" class="btn" onclick="Clear()" style="background-color:#61885eff">Clear</button>
+            </div>
+         </div>
+      </main>
+   </body>
+
+   <footer>
+      <ul>
+         <li>Coded By 1Peripheral</li>
+         <li>E-mail : code7ph@protonmail.com</li>
+         <li>Visit My <a id='gh-link' href="https://github.com/1Peripheral/" target="_blank">GitHub</a></li>
+      </ul>
+      <span>Copyright &copy; 2022</span>
+   </footer>
+</html>
